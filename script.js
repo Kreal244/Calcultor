@@ -71,7 +71,7 @@ equal.addEventListener("click", () => {
     if (firstNumber && !operator && !secondNumber) {
         if (result = "11235") {
             window.open("https://youtu.be/dQw4w9WgXcQ")
-            Refresh;
+            Refresh();
       }
     result = firstNumber;
   } else {
