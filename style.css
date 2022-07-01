@@ -1,0 +1,70 @@
+html {
+  background-color: antiquewhite;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 2em;
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 450;
+}
+.container {
+  margin-top: 13%;
+  display: block;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #57EDFF;
+  padding: 17px;
+}
+#show-screen {
+  height: 100px;
+  border-radius: 10px;
+  display: block;
+  font-size: 2.5em;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  text-align: end;
+  padding: 7px;
+}
+#switch-body {
+  display: flex;
+  margin-top: 10px;
+}
+
+.number-switch {
+  width: 350px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+.operator-switch {
+  display: grid;
+  row-gap: 10px;
+}
+.button-number {
+  width: 100px;
+  background-color: #eaf6f4;
+}
+.button-operator, .button-function {
+  width: 100px;
+  padding: 5px;
+  background-color: lightpink;
+}
+.button-number:hover {
+  background-color: #e9feb5;
+}
+#op-equal,
+#op-del {
+  width: 100px;
+  background-color: #fae2ab;
+}
+.button-operator:hover,
+.button-function:hover,
+#op-equal:hover,
+#op-del:hover {
+  background-color: #deb5fe;
+}
