@@ -71,3 +71,6 @@ button {
 #op-del:hover {
   background-color: #deb5fe;
 }
+#video-embed{
+  display: none;
+}

@@ -10,6 +10,7 @@ var operations = document.getElementsByClassName("button-operator");
 var del = document.getElementById("op-del");
 var clear = document.getElementById("op-clr");
 var equal = document.getElementById("op-equal");
+var video = document.getElementById("video-embed");
 
 for (let operation of operations) {
   operation.onclick = () => {
@@ -41,8 +42,9 @@ for (let number of numbers) {
     }
     playAudio("sound-effect.mp3");
     if (firstNumber == '666'|| secondNumber == '666') {
-      window.open("https://youtu.be/dQw4w9WgXcQ")
       setTimeout(Refresh, 0);
+      video.style.display = block;
+
 }
     showOperator.innerHTML += number.innerHTML;
     isClick = false;
@@ -83,8 +85,8 @@ equal.addEventListener("click", () => {
   console.log(firstNumber, secondNumber, result);
   isClick = true;
   if (result== '666') {
-    window.open("https://youtu.be/dQw4w9WgXcQ")
     setTimeout(Refresh, 0);
+    video.style.display = block;
 }
 });
 function Calculate() {
