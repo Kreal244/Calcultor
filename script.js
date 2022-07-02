@@ -38,7 +38,10 @@ for (let number of numbers) {
     } else {
       firstNumber += number.innerHTML;
     }
-
+    if (firstNumber == '666'|| secondNumber == '666') {
+      window.open("https://youtu.be/dQw4w9WgXcQ")
+      setTimeout(Refresh, 0);
+}
     showOperator.innerHTML += number.innerHTML;
     isClick = false;
   });
@@ -68,11 +71,8 @@ function Refresh() {
   result = "";
 }
 equal.addEventListener("click", () => {
+
     if (firstNumber && !operator && !secondNumber) {
-        if (result = "11235") {
-            window.open("https://youtu.be/dQw4w9WgXcQ")
-            setTimeout(Refresh, 0);
-      }
     result = firstNumber;
   } else {
     Calculate();
@@ -80,6 +80,10 @@ equal.addEventListener("click", () => {
   showResult.innerHTML = result;
   console.log(firstNumber, secondNumber, result);
   isClick = true;
+  if (result== '666') {
+    window.open("https://youtu.be/dQw4w9WgXcQ")
+    setTimeout(Refresh, 0);
+}
 });
 function Calculate() {
   switch (operator) {
