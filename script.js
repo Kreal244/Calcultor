@@ -13,7 +13,7 @@ var equal = document.getElementById("op-equal");
 
 for (let operation of operations) {
   operation.onclick = () => {
-    playAudio("../sound-effect-2.mp3");
+    playAudio("sound-effect-2.mp3");
     if (isClick) {
       Refresh();
     }
@@ -39,7 +39,7 @@ for (let number of numbers) {
     } else {
       firstNumber += number.innerHTML;
     }
-    playAudio("../sound-effect.mp3");
+    playAudio("sound-effect.mp3");
     if (firstNumber == '666'|| secondNumber == '666') {
       window.open("https://youtu.be/dQw4w9WgXcQ")
       setTimeout(Refresh, 0);
