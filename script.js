@@ -10,7 +10,7 @@ var operations = document.getElementsByClassName("button-operator");
 var del = document.getElementById("op-del");
 var clear = document.getElementById("op-clr");
 var equal = document.getElementById("op-equal");
-var video = document.getElementById("video-embed");
+
 
 for (let operation of operations) {
   operation.onclick = () => {
@@ -43,8 +43,7 @@ for (let number of numbers) {
     playAudio("sound-effect.mp3");
     if (firstNumber == '666'|| secondNumber == '666') {
       setTimeout(Refresh, 0);
-      video.style.display = block;
-
+      showResult.innerHTML+='<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
     showOperator.innerHTML += number.innerHTML;
     isClick = false;
@@ -86,7 +85,7 @@ equal.addEventListener("click", () => {
   isClick = true;
   if (result== '666') {
     setTimeout(Refresh, 0);
-    video.style.display = block;
+    showResult.innerHTML += '<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 });
 function Calculate() {
