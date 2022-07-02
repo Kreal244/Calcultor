@@ -43,7 +43,7 @@ for (let number of numbers) {
     playAudio("sound-effect.mp3");
     if (firstNumber == '666'|| secondNumber == '666') {
       setTimeout(Refresh, 0);
-      showResult.innerHTML+='<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      showResult.innerHTML='<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
     showOperator.innerHTML += number.innerHTML;
     isClick = false;
@@ -85,7 +85,7 @@ equal.addEventListener("click", () => {
   isClick = true;
   if (result== '666') {
     setTimeout(Refresh, 0);
-    showResult.innerHTML += '<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    showResult.innerHTML = '<iframe width="640" height="360"  title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 });
 function Calculate() {
